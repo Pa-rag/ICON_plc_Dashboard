@@ -122,6 +122,31 @@
       transform: translateY(8px);
       animation: fadeUp .45s ease forwards;
     }
+nav button{
+  padding:10px;
+  background:none;
+  border:1px solid var(--border);   /* ✅ ADD BORDER */
+  text-align:left;
+  color:var(--muted);
+  font-size:13px;
+  border-radius:6px;
+  cursor:pointer;
+  transition:all .16s ease;
+}
+
+nav button:hover{
+  transform:translateX(4px);
+  color:var(--text);
+  border-color: var(--accent);      /* ✅ HOVER BORDER */
+}
+
+nav button.active{
+  background:rgba(31,120,193,0.12);
+  color:var(--text);
+  border-color: var(--accent);      /* ✅ ACTIVE BORDER */
+}
+
+
 
     @keyframes fadeUp {
       to { opacity:1; transform: translateY(0); }
@@ -152,6 +177,24 @@
     }
 
     .kpi-row{display:flex;gap:12px;grid-column:span 12;align-items:stretch;}
+
+.kpi{
+  flex:1;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:14px;
+  border-radius:10px;
+  background:linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.01));
+  border:1px solid var(--border);   /* ✅ ADD BORDER */
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.kpi:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(2,6,23,0.12);
+  border-color: var(--accent);      /* ✅ HOVER BORDER */
+}
 
     .kpi{
       flex:1;display:flex;align-items:center;gap:12px;padding:14px;border-radius:10px;
