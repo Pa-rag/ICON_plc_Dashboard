@@ -197,6 +197,7 @@
       <button data-target="forecast">Forecast</button>
       <button data-target="story">Story Behind Data</button>
       <button data-target="insights">Business Insights</button>
+      <button data-target="tech">Technical Documentation</button>
     </nav>
 
     <div class="filter-title">Filter years</div>
@@ -286,6 +287,7 @@
       <p><b>AI Reflection:</b> ChatGPT was used as a support tool for structuring code, refining visual design, and drafting explanatory content. All analytical decisions and final validation were performed manually.</p>
       <p><b>Access:</b> All project documentation and source code are hosted and accessible via the GitHub Pages site.</p>
     </div>
+   </div>
 
   </main>
 </div>
@@ -465,7 +467,8 @@ document.querySelectorAll('#nav button').forEach(btn=>{
       diagnostic: 'corrHeat',
       forecast: 'forecastArea',
       story: 'storySection',
-      insights: 'insightsSection'
+      insights: 'insightsSection',
+      tech: 'techSection'
     };
 
     const el=document.getElementById(mapping[this.dataset.target]);
